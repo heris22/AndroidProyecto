@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JuegoActivity"
+    android:background="@drawable/fondomecanica"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/txtcontador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textColor="#EE501B"
+        android:text="00:20" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal" >
+
+
+        <ImageView android:id="@+id/imgmanzana"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/manzana" />
+        <ImageView android:id="@+id/imgaguacate"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/aguacate" />
+        <ImageView android:id="@+id/imgqueso"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/queso" />
+        <ImageView android:id="@+id/imgsanduche"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/sanduche" />
+        <ImageView android:id="@+id/imgleche"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/leche" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:orientation="horizontal" >
+        <ImageView
+            android:id="@+id/namidos"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/ibX"
+
+            app:srcCompat="@drawable/namidos" />
+
+        <ImageView
+            android:id="@+id/lonchera"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/ibX"
+
+            app:srcCompat="@drawable/lonchera" />
+
+        <LinearLayout android:id="@+id/layout1"
+            android:layout_width="600dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="#9CD67C"
+            android:gravity="center"
+            android:orientation="vertical">
+        </LinearLayout>
+        <LinearLayout android:id="@+id/layout2"
+            android:layout_width="600dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="#F97272"
+            android:gravity="center"
+            android:orientation="vertical" />
+        <LinearLayout android:id="@+id/layout3"
+            android:layout_width="600dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="#FFE300"
+            android:gravity="center"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
